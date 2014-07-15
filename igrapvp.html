@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<link rel="stylesheet" type="text/css" href="stil.css">
+		<link rel="shortcut icon" href="#">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">	
+		<meta name="description" content="Igra križić-kružić">
+		<meta name="keywords" content="Igra, Križić-kružić, tic tac toe, 2DK Studios Inc.">
+		<meta name="author" content="Dominik Pavičić, Dario Poljak, Karlo Kušenić">
+		<title>Igra protiv prijatelja</title>
+	</head>
+	<body>
+		<h1>Križić Kružić</h1>
+		<div id="izbornik">
+			<ul>
+				<li><a href="index.html">Naslovnica</a></li>
+				<li><a href="igra.html">Igra</a></li>
+				<li><a href="autori.html">O autorima</a></li>
+				<li><a href="pretraga.html">Pretraga</a></li>
+			</ul>
+		</div> 
+		<div id="divider">
+			<div id="crumbs">
+				Nalazite se na stranici: <a href="igra.html">Igra/</a><a href="igrapvp.html">Igra protiv prijatelja/</a>
+			</div>
+		</div>
+		<div id="textbox">
+			<div id="tablica">
+				<script type="text/javascript">
+				<!--
+					// Varijabla potez služi za provjeru trenutnog poteza i provjeru koji igrač je na redu.
+					var potez=1;
+					// Varijabla poljeZaProvjeru služi za utvrđivanje pobjednika.
+					var poljeZaProvjeru=["0", "1", "2", "3", "4", "5", "6", "7", "8"];
+					// Varijabla prazno se koristi za stvaranje praznog sadržaja u poljima u tablici.
+					var prazno=" ";
+					// Funkcija restart služi za resetiranje igre. Funkcija isprazni sva polja, postavlja potez na 1 i u varijabluZaProvjeru ponovo stavlja prazne vrijednosti.
+					function restart()
+					{
+						for(var brojac=0; brojac<9; brojac++)
+						{
+							document.getElementById(brojac.toString()).innerHTML=prazno;
+							poljeZaProvjeru[brojac]=brojac.toString();
+						}
+						potez=1;
+					}
+					// Funkcija koja se služi za pokretanje cijele igre.
+					function igra(polje)
+					{
+						// Provjera da li je polje prazno, tj. da li se može unositi u to polje
+						if  (polje.innerHTML==" ")
+						{
+							// Provjera da li je pređen broj maksimalnih poteza
+							if (potez<10)
+							{
+								// Provjera za utvrđivanje koji igrač je na potezu
+								if (potez%2==0)
+								{
+									var igrac="O";
+								}
+								else
+								{
+									var igrac="X";
+								}
+								potez++;
+								//U kliknuto polje se unosi križić ili kružić
+								polje.innerHTML=igrac;
+								//U poljeZaProvjeru se unosi križić ili kružić
+								poljeZaProvjeru[parseInt(polje.getAttribute("id"))]=igrac;
+								//Iduće provjere provjeravaju dobitničke kombinacije, te na temelju toga proglašuju pobjednika.
+								if (poljeZaProvjeru[0]==igrac && poljeZaProvjeru[1]==igrac && poljeZaProvjeru[2]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[3]==igrac && poljeZaProvjeru[4]==igrac && poljeZaProvjeru[5]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[6]==igrac && poljeZaProvjeru[7]==igrac && poljeZaProvjeru[8]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[0]==igrac && poljeZaProvjeru[3]==igrac && poljeZaProvjeru[6]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[1]==igrac && poljeZaProvjeru[4]==igrac && poljeZaProvjeru[7]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[2]==igrac && poljeZaProvjeru[5]==igrac && poljeZaProvjeru[8]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[0]==igrac && poljeZaProvjeru[4]==igrac && poljeZaProvjeru[8]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								else if (poljeZaProvjeru[2]==igrac && poljeZaProvjeru[4]==igrac && poljeZaProvjeru[6]==igrac)
+								{
+									alert("Pobjednik je " + igrac);
+									restart();
+								}
+								//Ukoliko je došlo do poteza 10, nema pobjednika, ispiše nerješeno
+								else if (potez==10)
+								{
+									alert("Nerješeno!");
+									restart();
+								}
+							}
+						}
+					}
+				
+				-->			
+				</script>
+				<table>
+					<tr>
+						<td id="0" onClick="igra(this)"> </td>
+						<td id="1" onClick="igra(this)"> </td>
+						<td id="2" onClick="igra(this)"> </td>
+					</tr>
+					<tr>
+						<td id="3" onClick="igra(this)"> </td>
+						<td id="4" onClick="igra(this)"> </td>
+						<td id="5" onClick="igra(this)"> </td>
+					</tr>
+					<tr>
+						<td id="6" onClick="igra(this)"> </td>
+						<td id="7" onClick="igra(this)"> </td>
+						<td id="8" onClick="igra(this)"> </td>
+					</tr>
+		
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<script>document.write("Zadnja promjena :"+document.lastModified)</script>
+		</div>
+	</body>
+</html>

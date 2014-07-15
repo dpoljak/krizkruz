@@ -1,0 +1,148 @@
+body{
+	background-image:url('bg.png');
+	background-repeat:repeat;
+	text-align:center;
+	} 
+h1{
+	font-size: 300%;
+	font-family: Arial, sans-serif;
+	margin: 0px 0px 2% 0px;
+	color:#ff7e00;
+	}	
+#divider{
+	border-bottom-style:solid;
+	border-color:#ff7e00;
+	}
+#izbornik{
+	font-family: Arial, sans-serif;
+	font-weight:bold;
+	font-size: 100%;
+}
+#izbornik ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+	}
+#izbornik li{
+	display: inline;
+	margin:0px 5px 0px 5px;
+}
+#izbornik a:link, #izbornik a:visited{
+	padding: 4px 20px 0px 20px;
+	color:#ff7e00;
+	text-decoration:none;
+	border-top: 2px dashed #313131;
+	border-left: 2px dashed #313131;
+	border-right: 2px dashed #313131;
+}
+#izbornik a:hover{
+	border-top: 2px solid #ff7e00;
+	border-bottom: 2px solid #ff7e00;
+	border-left: 2px solid #ff7e00;
+	border-right: 2px solid #ff7e00;
+	}
+#izbornik a.current{
+	border-top: 2px solid #ff7e00;
+	border-bottom: 2px solid #ff7e00;
+	border-left: 2px solid #ff7e00;
+	border-right: 2px solid #ff7e00;
+	color:#313131;
+	background-color:#ff7e00;
+	}
+#textbox{
+	position:absolute;
+	margin-right:10%;
+	margin-left:19%;
+	width:60%;
+	height:70%;
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,.45);
+	font-family: Arial, sans-serif;
+	font-size: 150%;
+	color:#313131;
+	padding: .5%;
+	overflow:auto;
+	margin-bottom:15%;
+	margin-top:3%
+	}
+#textbox p{
+	padding:0% 3% 0% 3%;
+	text-align:justify;
+}
+#textbox dl a{
+	display:inline;
+	text-decoration:none;
+	font-family: Arial, sans-serif;
+	color:#313131;
+}
+#footer{
+	position:absolute;
+	bottom:.5%;
+	right:1%;
+	color: #ff7e00;
+	font-family: Arial, sans-serif;
+	font-size:90%;
+}
+#crumbs{
+	margin-top:.1%;
+	float: left;
+	color: #ff7e00;
+	font-family: Arial, sans-serif;
+	font-size:90%;
+}
+#crumbs a, #crumbs a:visited{
+	text-decoration:none;
+	color: #ff7e00;
+	font-family: Arial, sans-serif;
+}
+#igraj{
+	position:relative;
+	left:34%;
+	width: 30%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+#igraj ul{
+	list-style:none;
+	margin: 10%;
+
+}
+#igraj li a{
+	margin-top:5%;
+	display:block;
+	color: #313131;
+	padding: 5%;
+	background-color: #ff7e00;
+	text-decoration:none;
+}
+#igraj li a:hover{
+	background-color: #c86d14;
+}
+table
+{	
+	padding-top:5%;
+	font-size:150%;
+	border:none;
+	table-layout:fixed;
+	margin-left: auto;
+	margin-right: auto;
+	width:90%;
+}
+tr
+{
+	height:100px;
+}
+table tr td{
+	border:solid 3px #3F3F3F;
+}
+#tic{
+	position:absolute;
+	left:40%;
+	top:20%;
+}
+#copyright{
+	font-size:50%;
+	position:absolute;
+	bottom:1%;
+	left:1%;
+	}
