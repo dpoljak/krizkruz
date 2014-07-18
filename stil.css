@@ -31,9 +31,9 @@ h1{
 	padding: 4px 20px 0px 20px;
 	color:#ff7e00;
 	text-decoration:none;
-	border-top: 2px dashed #313131;
-	border-left: 2px dashed #313131;
-	border-right: 2px dashed #313131;
+	border-top: 2px dashed rgba(49, 49, 49, .1);
+	border-left: 2px dashed rgba(49, 49, 49, .1);
+	border-right: 2px dashed rgba(49, 49, 49, .1);
 }
 #izbornik a:hover{
 	border-top: 2px solid #ff7e00;
