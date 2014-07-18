@@ -7,11 +7,11 @@ h1{
 	font-size: 300%;
 	font-family: Arial, sans-serif;
 	margin: 0px 0px 2% 0px;
-	color:#ff7e00;
+	color:#00B8F5;
 	}	
 #divider{
 	border-bottom-style:solid;
-	border-color:#ff7e00;
+	border-color:#00B8F5;
 	}
 #izbornik{
 	font-family: Arial, sans-serif;
@@ -29,25 +29,25 @@ h1{
 }
 #izbornik a:link, #izbornik a:visited{
 	padding: 4px 20px 0px 20px;
-	color:#ff7e00;
+	color:#00B8F5;
 	text-decoration:none;
 	border-top: 2px dashed #313131;
 	border-left: 2px dashed #313131;
 	border-right: 2px dashed #313131;
 }
 #izbornik a:hover{
-	border-top: 2px solid #ff7e00;
-	border-bottom: 2px solid #ff7e00;
-	border-left: 2px solid #ff7e00;
-	border-right: 2px solid #ff7e00;
+	border-top: 2px solid #00B8F5;
+	border-bottom: 2px solid #00B8F5;
+	border-left: 2px solid #00B8F5;
+	border-right: 2px solid #00B8F5;
 	}
 #izbornik a.current{
-	border-top: 2px solid #ff7e00;
-	border-bottom: 2px solid #ff7e00;
-	border-left: 2px solid #ff7e00;
-	border-right: 2px solid #ff7e00;
+	border-top: 2px solid #00B8F5;
+	border-bottom: 2px solid #00B8F5;
+	border-left: 2px solid #00B8F5;
+	border-right: 2px solid #00B8F5;
 	color:#313131;
-	background-color:#ff7e00;
+	background-color:#00B8F5;
 	}
 #textbox{
 	position:absolute;
@@ -79,20 +79,20 @@ h1{
 	position:absolute;
 	bottom:.5%;
 	right:1%;
-	color: #ff7e00;
+	color: #00B8F5;
 	font-family: Arial, sans-serif;
 	font-size:90%;
 }
 #crumbs{
 	margin-top:.1%;
 	float: left;
-	color: #ff7e00;
+	color: #00B8F5;
 	font-family: Arial, sans-serif;
 	font-size:90%;
 }
 #crumbs a, #crumbs a:visited{
 	text-decoration:none;
-	color: #ff7e00;
+	color: #00B8F5;
 	font-family: Arial, sans-serif;
 }
 #igraj{
@@ -112,11 +112,11 @@ h1{
 	display:block;
 	color: #313131;
 	padding: 5%;
-	background-color: #ff7e00;
+	background-color: #00B8F5;
 	text-decoration:none;
 }
 #igraj li a:hover{
-	background-color: #c86d14;
+	background-color: #99FFFF;
 }
 table
 {	
